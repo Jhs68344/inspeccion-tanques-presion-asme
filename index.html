@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspección de Tanques a Presión ASME – JHS Services SAS</title>
+  <meta name="description" content="Servicio profesional de inspección de tanques a presión bajo código ASME Sección VIII División 1. Evaluación de casco, cabezas, soldaduras, espesores y presión de trabajo segura.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+    }
+
+    body {
+      background-color: #050608;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #050608;
+      border-bottom: 1px solid #1f2933;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-area img {
+      height: 50px;
+      width: auto;
+    }
+
+    .logo-text span:first-child {
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: #f97316;
+      font-size: 0.95rem;
+    }
+
+    .logo-text span:last-child {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: #e5e7eb;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 2.1rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .hero-title span {
+      color: #f97316;
+    }
+
+    .tank-frame {
+      max-width: 420px;
+      width: 100%;
+      aspect-ratio: 4/3;
+      border-radius: 1.5rem;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      overflow: hidden;
+      border: 1px solid #1f2937;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .tank-image {
+      width: 82%;
+      animation: girar 14s linear infinite;
+      transform-origin: center center;
+    }
+
+    .tank-image:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes girar {
+      0%   { transform: rotateY(0deg); }
+      50%  { transform: rotateY(180deg); }
+      100% { transform: rotateY(360deg); }
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid #111827;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      border-top: 1px solid #111827;
+      margin-top: 3rem;
+      color: #aaa;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo-area">
+      <img src="logo-jhs-services-sas.png" alt="Logo JHS Services SAS">
+      <div class="logo-text">
+        <span>JHS SERVICES SAS</span>
+        <span>Ensayos no destructivos</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1 class="hero-title">
+      Inspección de Tanques a Presión<br>
+      <span>Código ASME Sección VIII Div. 1</span>
+    </h1>
+
+    <p>
+      Se ofrece el servicio de inspección de Tanques a Presión bajo código ASME sección VIII Div 1.
+      Se determinará el estado actual del casco, cabeza superior e inferior para tanques tipo 1 verticales.
+      Para tanques horizontales tipo 2, se evaluarán el casco y cabezas laterales.
+    </p>
+
+    <p>
+      Se inspeccionarán los cordones de soldadura mediante ensayo de
+      líquidos penetrantes y ultrasonido defectológico.
+    </p>
+
+    <p>
+      De acuerdo con la presión de diseño, dimensiones, espesor, material y condición de soldaduras,
+      se determinará si el tanque es apto para continuar operando, si requiere reparación
+      o cuál es la presión de trabajo segura.
+    </p>
+
+    <p>
+      Todo lo anterior apoyado en equipos de última generación y software especializado.
+    </p>
+  </div>
+
+  <div class="tank-frame">
+    <img src="tanques-presion-asme-3d.png" class="tank-image" alt="Modelos 3D de tanques a presión ASME">
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> JHS Services SAS – Inspección de Tanques ASME.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
