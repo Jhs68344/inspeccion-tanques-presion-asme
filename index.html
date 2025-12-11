@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Inspección de Tanques a Presión ASME – JHS SAS</title>
+  <title>Inspección de Tanques a Presión ASME – JHS Services SAS</title>
 
   <!-- SEO básico -->
-  <meta name="description" content="JHS SAS ofrece inspección de tanques a presión bajo código ASME Sección VIII División 1, evaluando casco, cabezas, soldaduras, espesores y presión de trabajo segura.">
-  <meta name="keywords" content="inspección tanques a presión, ASME Sección VIII, ensayos no destructivos, líquidos penetrantes, ultrasonido, JHS SAS, Bogotá-Colombia">
+  <meta name="description" content="JHS Services SAS ofrece inspección de tanques a presión bajo código ASME Sección VIII División 1, evaluando casco, cabezas, soldaduras, espesores y presión de trabajo segura.">
+  <meta name="keywords" content="inspección tanques a presión, ASME Sección VIII, ensayos no destructivos, líquidos penetrantes, ultrasonido, JHS Services SAS, Colombia">
   <meta name="author" content="JHS Services SAS">
 
   <!-- Open Graph para redes -->
-  <meta property="og:title" content="Inspección de Tanques a Presión ASME – JHS SAS">
+  <meta property="og:title" content="Inspección de Tanques a Presión ASME – JHS Services SAS">
   <meta property="og:description" content="Servicio especializado de inspección de tanques a presión bajo código ASME Sección VIII Div. 1 con ensayos no destructivos.">
   <meta property="og:type" content="website">
 
@@ -37,7 +37,7 @@
 
     /* ENCABEZADO */
     header {
-      background: #050608;
+      background: #111827; /* barra superior de otro color */
       border-bottom: 1px solid #1f2933;
       position: sticky;
       top: 0;
@@ -50,8 +50,8 @@
       padding: 0.6rem 1.5rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
+      justify-content: flex-start;
+      gap: 0.9rem;
     }
 
     .logo-area {
@@ -61,55 +61,28 @@
     }
 
     .logo-area img {
-      height: 48px;
+      height: 64px;   /* logo más grande */
       width: auto;
     }
 
     .logo-text {
       display: flex;
-      flex-direction: column;
-      line-height: 1.15;
+      flex-direction: column; /* asegura una línea debajo de la otra */
+      line-height: 1.18;
     }
 
     .logo-text span:first-child {
       font-weight: 800;
       letter-spacing: 0.08em;
       color: #f97316;
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
 
     .logo-text span:last-child {
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
-      color: #e5e7eb;
-      opacity: 0.9;
-    }
-
-    .header-contact {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 0.15rem;
-      padding: 0.4rem 0.75rem;
-      border-radius: 999px;
-      border: 1px solid #1f2937;
-      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.8));
-      font-size: 0.78rem;
-      color: #e5e7eb;
-    }
-
-    .header-phone {
-      font-weight: 600;
-      font-size: 0.82rem;
-    }
-
-    .header-phone span {
-      color: #f97316;
-    }
-
-    .header-contact small {
-      font-size: 0.7rem;
-      color: #9ca3af;
+      color: #f9fafb;
+      opacity: 0.95;
     }
 
     /* HERO */
@@ -124,8 +97,8 @@
     }
 
     .hero-title {
-      font-size: 2.15rem;
-      line-height: 1.18;
+      font-size: 1.85rem;  /* título un poco más moderado */
+      line-height: 1.22;
       margin-bottom: 1.1rem;
     }
 
@@ -141,31 +114,7 @@
       margin-bottom: 0.7rem;
     }
 
-    .hero-contact-card {
-      margin-top: 0.9rem;
-      padding: 0.7rem 0.85rem;
-      border-radius: 0.9rem;
-      border: 1px solid #1f2937;
-      background: rgba(15, 23, 42, 0.8);
-      font-size: 0.85rem;
-      color: #e5e7eb;
-      max-width: 360px;
-    }
-
-    .hero-contact-card strong {
-      color: #f97316;
-    }
-
-    .hero-contact-list {
-      margin-top: 0.4rem;
-      padding-left: 1.05rem;
-    }
-
-    .hero-contact-list li {
-      margin-bottom: 0.15rem;
-    }
-
-    /* TANQUES */
+    /* TANQUES (se dejan como estaban visualmente) */
     .tanks-wrapper {
       display: flex;
       flex-direction: column;
@@ -278,128 +227,4 @@
     }
 
     /* Responsive */
-    @media (max-width: 880px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-
-      .header-contact {
-        display: none; /* en móvil dejamos solo el contenido principal */
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <div class="nav-container">
-    <div class="logo-area">
-      <img src="logo-jhs-services-sas.png" alt="Logo JHS Services SAS">
-      <div class="logo-text">
-        <span>JHS SAS</span>
-        <span>ENSAYOS NO DESTRUCTIVOS</span>
-      </div>
-    </div>
-
-    <!-- Cajoncito con el número -->
-    <div class="header-contact">
-      <div class="header-phone">
-        📞 <span>+57 316 872 6521</span>
-      </div>
-      <small>Atención técnica – Colombia</small>
-    </div>
-  </div>
-</header>
-
-<section class="hero">
-  <div>
-    <h1 class="hero-title">
-      Inspección de Tanques a Presión
-      <span>Código ASME Sección VIII Div. 1</span>
-    </h1>
-
-    <p>
-      Se ofrece el servicio de inspección de Tanques a Presión bajo código ASME sección VIII Div 1.
-    </p>
-
-    <p>
-      Se determinará el estado actual del casco, cabeza superior y cabeza inferior para el caso de tanques tipo 1 verticales.
-    </p>
-
-    <p>
-      Se determinará el estado actual del casco y cabezas laterales para el caso de tanques tipo 2 horizontales.
-    </p>
-
-    <p>
-      Se inspeccionarán los cordones de soldadura que conforman la estructura del tanque mediante ensayo de
-      líquidos penetrantes y ultrasonido defectológico.
-    </p>
-
-    <p>
-      De acuerdo con la presión de diseño, dimensiones del tanque, tipo de material de construcción, estado de cordones
-      de soldadura y espesor actual de las láminas, se determinará el estado actual del tanque para la condición de
-      operación (presión de diseño), pudiendo concluir si el tanque es apto para continuar bajo operación o si, por el
-      contrario, no califica y debe ser reparado, o cuál es la presión de trabajo segura.
-    </p>
-
-    <p>
-      Todo lo anterior apoyado en equipos de última generación y software especializado.
-    </p>
-
-    <!-- Cajoncito de contacto principal -->
-    <div class="hero-contact-card">
-      <strong>Contacto para inspecciones y cotizaciones:</strong>
-      <ul class="hero-contact-list">
-        <li>Celular / WhatsApp: <strong>+57 316 872 6521</strong></li>
-        <li>Correo: <strong>info@jhsservices.com</strong></li>
-        <li>Servicio en Colombia.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="tanks-wrapper">
-    <!-- Tanque vertical -->
-    <div class="tank-frame">
-      <img
-        src="tanque-vertical-asme.png"
-        class="tank-image"
-        alt="Tanque a presión vertical tipo 1 bajo código ASME"
-      >
-      <div class="tank-label">TANQUE VERTICAL – TIPO 1</div>
-    </div>
-
-    <!-- Tanque horizontal -->
-    <div class="tank-frame">
-      <img
-        src="tanque-horizontal-asme.png"
-        class="tank-image"
-        alt="Tanque a presión horizontal tipo 2 bajo código ASME"
-      >
-      <div class="tank-label">TANQUE HORIZONTAL – TIPO 2</div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © <span id="year"></span> JHS SAS – Inspección de tanques a presión ASME.
-</footer>
-
-<!-- Botón flotante de WhatsApp -->
-<a
-  href="https://wa.me/573168726521?text=Hola%20JHS%20Services%2C%20deseo%20informaci%C3%B3n%20sobre%20la%20inspecci%C3%B3n%20de%20tanques%20a%20presi%C3%B3n%20ASME."
-  class="whatsapp-float"
-  target="_blank"
-  rel="noopener"
->
-  <div class="whatsapp-icon">W</div>
-  <span>WhatsApp</span>
-</a>
-
-<script>
-  // Año automático en el footer
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
+    @media (max-
