@@ -11,12 +11,10 @@
   <meta name="keywords" content="inspección tanques a presión, ASME Sección VIII, ensayos no destructivos, líquidos penetrantes, ultrasonido, JHS Services SAS, Colombia">
   <meta name="author" content="JHS Services SAS">
 
-  <!-- Open Graph para compartir en redes -->
+  <!-- Open Graph para redes -->
   <meta property="og:title" content="Inspección de Tanques a Presión ASME – JHS Services SAS">
   <meta property="og:description" content="Servicio especializado de inspección de tanques a presión bajo código ASME Sección VIII Div. 1 con ensayos no destructivos.">
   <meta property="og:type" content="website">
-  <!-- Si luego subes una imagen específica para compartir, cámbiala aquí -->
-  <!-- <meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/imagen-og.png"> -->
 
   <style>
     * {
@@ -106,10 +104,17 @@
       margin-bottom: 0.7rem;
     }
 
-    /* Marco de los tanques */
+    /* Contenedor general de tanques */
+    .tanks-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
     .tank-frame {
-      max-width: 420px;
       width: 100%;
+      max-width: 420px;
       aspect-ratio: 4/3;
       border-radius: 1.5rem;
       background: radial-gradient(circle at top, #0f172a, #020617);
@@ -122,8 +127,18 @@
       box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8);
     }
 
+    .tank-label {
+      position: absolute;
+      bottom: 0.45rem;
+      left: 0.9rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #9ca3af;
+    }
+
     .tank-image {
-      width: 82%;
+      width: 80%;
       height: auto;
       animation: girar 14s linear infinite;
       transform-origin: center center;
@@ -131,6 +146,7 @@
       transition: filter 0.3s ease;
     }
 
+    /* Cada tanque rota de manera independiente y se pausa con su propio hover */
     .tank-image:hover {
       animation-play-state: paused;
       filter: drop-shadow(0 0 26px rgba(56, 189, 248, 0.9));
@@ -140,26 +156,6 @@
       0%   { transform: rotateY(0deg); }
       50%  { transform: rotateY(180deg); }
       100% { transform: rotateY(360deg); }
-    }
-
-    section {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
-      color: #ffffff;
-    }
-
-    .card {
-      background: rgba(15, 23, 42, 0.7);
-      border: 1px solid #111827;
-      padding: 1rem;
-      border-radius: 1rem;
-      margin-bottom: 1rem;
     }
 
     footer {
@@ -204,6 +200,7 @@
       justify-content: center;
       font-size: 0.9rem;
       font-weight: 700;
+      background: rgba(0, 0, 0, 0.15);
     }
 
     /* Responsive */
@@ -266,11 +263,26 @@
     </p>
   </div>
 
-  <div class="tank-frame">
-    <!-- Asegúrate de que este archivo exista en el repositorio -->
-    <img src="tanques-presion-asme-3d.png"
-         class="tank-image"
-         alt="Modelos 3D de tanques a presión vertical y horizontal bajo código ASME">
+  <div class="tanks-wrapper">
+    <!-- Tanque vertical -->
+    <div class="tank-frame">
+      <img
+        src="tanque-vertical-asme.png"
+        class="tank-image"
+        alt="Tanque a presión vertical tipo 1 bajo código ASME"
+      >
+      <div class="tank-label">Tanque vertical – Tipo 1</div>
+    </div>
+
+    <!-- Tanque horizontal -->
+    <div class="tank-frame">
+      <img
+        src="tanque-horizontal-asme.png"
+        class="tank-image"
+        alt="Tanque a presión horizontal tipo 2 bajo código ASME"
+      >
+      <div class="tank-label">Tanque horizontal – Tipo 2</div>
+    </div>
   </div>
 </section>
 
@@ -280,7 +292,7 @@
 
 <!-- Botón flotante de WhatsApp -->
 <a
-  href="https://wa.me/3168726521?text=Hola%20JHS%20Services%2C%20deseo%20informaci%C3%B3n%20sobre%20la%20inspecci%C3%B3n%20de%20tanques%20a%20presi%C3%B3n%20ASME."
+  href="https://wa.me/573001112233?text=Hola%20JHS%20Services%2C%20deseo%20informaci%C3%B3n%20sobre%20la%20inspecci%C3%B3n%20de%20tanques%20a%20presi%C3%B3n%20ASME."
   class="whatsapp-float"
   target="_blank"
   rel="noopener"
