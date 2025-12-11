@@ -8,11 +8,11 @@
 
   <!-- SEO básico -->
   <meta name="description" content="JHS SAS ofrece inspección de tanques a presión bajo código ASME Sección VIII División 1, evaluando casco, cabezas, soldaduras, espesores y presión de trabajo segura.">
-  <meta name="keywords" content="inspección tanques a presión, ASME Sección VIII, ensayos no destructivos, líquidos penetrantes, ultrasonido, JHS SAS, Colombia">
+  <meta name="keywords" content="inspección tanques a presión, ASME Sección VIII, ensayos no destructivos, líquidos penetrantes, ultrasonido, JHS SAS, Bogotá-Colombia">
   <meta name="author" content="JHS Services SAS">
 
   <!-- Open Graph para redes -->
-  <meta property="og:title" content="Inspección de Tanques a Presión ASME – JHS Services SAS">
+  <meta property="og:title" content="Inspección de Tanques a Presión ASME – JHS SAS">
   <meta property="og:description" content="Servicio especializado de inspección de tanques a presión bajo código ASME Sección VIII Div. 1 con ensayos no destructivos.">
   <meta property="og:type" content="website">
 
@@ -35,6 +35,7 @@
       text-decoration: none;
     }
 
+    /* ENCABEZADO */
     header {
       background: #050608;
       border-bottom: 1px solid #1f2933;
@@ -46,7 +47,7 @@
     .nav-container {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 0.75rem 1.5rem;
+      padding: 0.6rem 1.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -60,8 +61,14 @@
     }
 
     .logo-area img {
-      height: 50px;
+      height: 48px;
       width: auto;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
     }
 
     .logo-text span:first-child {
@@ -72,30 +79,60 @@
     }
 
     .logo-text span:last-child {
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       text-transform: uppercase;
       color: #e5e7eb;
+      opacity: 0.9;
+    }
+
+    .header-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.15rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid #1f2937;
+      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.8));
+      font-size: 0.78rem;
+      color: #e5e7eb;
+    }
+
+    .header-phone {
+      font-weight: 600;
+      font-size: 0.82rem;
+    }
+
+    .header-phone span {
+      color: #f97316;
+    }
+
+    .header-contact small {
+      font-size: 0.7rem;
+      color: #9ca3af;
     }
 
     /* HERO */
     .hero {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 2rem 1.5rem 3rem;
+      padding: 2.2rem 1.5rem 3rem;
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 2rem;
       align-items: center;
     }
 
     .hero-title {
-      font-size: 2.1rem;
-      line-height: 1.2;
-      margin-bottom: 1rem;
+      font-size: 2.15rem;
+      line-height: 1.18;
+      margin-bottom: 1.1rem;
     }
 
     .hero-title span {
       color: #f97316;
+      font-weight: 700;
+      display: block;
     }
 
     .hero p {
@@ -104,7 +141,31 @@
       margin-bottom: 0.7rem;
     }
 
-    /* Contenedor general de tanques */
+    .hero-contact-card {
+      margin-top: 0.9rem;
+      padding: 0.7rem 0.85rem;
+      border-radius: 0.9rem;
+      border: 1px solid #1f2937;
+      background: rgba(15, 23, 42, 0.8);
+      font-size: 0.85rem;
+      color: #e5e7eb;
+      max-width: 360px;
+    }
+
+    .hero-contact-card strong {
+      color: #f97316;
+    }
+
+    .hero-contact-list {
+      margin-top: 0.4rem;
+      padding-left: 1.05rem;
+    }
+
+    .hero-contact-list li {
+      margin-bottom: 0.15rem;
+    }
+
+    /* TANQUES */
     .tanks-wrapper {
       display: flex;
       flex-direction: column;
@@ -117,7 +178,7 @@
       max-width: 420px;
       aspect-ratio: 4/3;
       border-radius: 1.5rem;
-      background: radial-gradient(circle at top, #0f172a, #020617);
+      background: radial-gradient(circle at top, #020617, #020617);
       overflow: hidden;
       border: 1px solid #1f2937;
       display: flex;
@@ -125,6 +186,18 @@
       align-items: center;
       position: relative;
       box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8);
+    }
+
+    .tank-frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 0% 50%, rgba(37, 99, 235, 0.45), transparent 55%),
+        radial-gradient(circle at 100% 50%, rgba(16, 185, 129, 0.45), transparent 55%);
+      mix-blend-mode: screen;
+      opacity: 0.7;
+      pointer-events: none;
     }
 
     .tank-label {
@@ -135,6 +208,7 @@
       text-transform: uppercase;
       letter-spacing: 0.14em;
       color: #9ca3af;
+      z-index: 2;
     }
 
     .tank-image {
@@ -144,9 +218,9 @@
       transform-origin: center center;
       filter: drop-shadow(0 0 22px rgba(56, 189, 248, 0.6));
       transition: filter 0.3s ease;
+      z-index: 1;
     }
 
-    /* Cada tanque rota de manera independiente y se pausa con su propio hover */
     .tank-image:hover {
       animation-play-state: paused;
       filter: drop-shadow(0 0 26px rgba(56, 189, 248, 0.9));
@@ -208,6 +282,10 @@
       .hero {
         grid-template-columns: 1fr;
       }
+
+      .header-contact {
+        display: none; /* en móvil dejamos solo el contenido principal */
+      }
     }
   </style>
 </head>
@@ -217,12 +295,19 @@
 <header>
   <div class="nav-container">
     <div class="logo-area">
-      <!-- Asegúrate de que este archivo exista en el repositorio -->
       <img src="logo-jhs-services-sas.png" alt="Logo JHS Services SAS">
       <div class="logo-text">
-        <span>JHS SERVICES SAS</span>
-        <span>Ensayos no destructivos</span>
+        <span>JHS SAS</span>
+        <span>ENSAYOS NO DESTRUCTIVOS</span>
       </div>
+    </div>
+
+    <!-- Cajoncito con el número -->
+    <div class="header-contact">
+      <div class="header-phone">
+        📞 <span>+57 316 872 6521</span>
+      </div>
+      <small>Atención técnica – Colombia</small>
     </div>
   </div>
 </header>
@@ -230,7 +315,7 @@
 <section class="hero">
   <div>
     <h1 class="hero-title">
-      Inspección de Tanques a Presión<br>
+      Inspección de Tanques a Presión
       <span>Código ASME Sección VIII Div. 1</span>
     </h1>
 
@@ -261,6 +346,16 @@
     <p>
       Todo lo anterior apoyado en equipos de última generación y software especializado.
     </p>
+
+    <!-- Cajoncito de contacto principal -->
+    <div class="hero-contact-card">
+      <strong>Contacto para inspecciones y cotizaciones:</strong>
+      <ul class="hero-contact-list">
+        <li>Celular / WhatsApp: <strong>+57 316 872 6521</strong></li>
+        <li>Correo: <strong>info@jhsservices.com</strong></li>
+        <li>Servicio en Colombia.</li>
+      </ul>
+    </div>
   </div>
 
   <div class="tanks-wrapper">
@@ -271,7 +366,7 @@
         class="tank-image"
         alt="Tanque a presión vertical tipo 1 bajo código ASME"
       >
-      <div class="tank-label">Tanque vertical – Tipo 1</div>
+      <div class="tank-label">TANQUE VERTICAL – TIPO 1</div>
     </div>
 
     <!-- Tanque horizontal -->
@@ -281,18 +376,18 @@
         class="tank-image"
         alt="Tanque a presión horizontal tipo 2 bajo código ASME"
       >
-      <div class="tank-label">Tanque horizontal – Tipo 2</div>
+      <div class="tank-label">TANQUE HORIZONTAL – TIPO 2</div>
     </div>
   </div>
 </section>
 
 <footer>
-  © <span id="year"></span> JHS Services SAS – Inspección de tanques a presión ASME.
+  © <span id="year"></span> JHS SAS – Inspección de tanques a presión ASME.
 </footer>
 
 <!-- Botón flotante de WhatsApp -->
 <a
-  href="https://wa.me/57 3168726521?text=Hola%20JHS%20Services%2C%20deseo%20informaci%C3%B3n%20sobre%20la%20inspecci%C3%B3n%20de%20tanques%20a%20presi%C3%B3n%20ASME."
+  href="https://wa.me/573168726521?text=Hola%20JHS%20Services%2C%20deseo%20informaci%C3%B3n%20sobre%20la%20inspecci%C3%B3n%20de%20tanques%20a%20presi%C3%B3n%20ASME."
   class="whatsapp-float"
   target="_blank"
   rel="noopener"
