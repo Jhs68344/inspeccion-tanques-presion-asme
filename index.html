@@ -3,8 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Inspección de Tanques a Presión ASME – JHS Services SAS</title>
-  <meta name="description" content="Servicio profesional de inspección de tanques a presión bajo código ASME Sección VIII División 1. Evaluación de casco, cabezas, soldaduras, espesores y presión de trabajo segura.">
+
+  <!-- SEO básico -->
+  <meta name="description" content="JHS Services SAS ofrece inspección de tanques a presión bajo código ASME Sección VIII División 1, evaluando casco, cabezas, soldaduras, espesores y presión de trabajo segura.">
+  <meta name="keywords" content="inspección tanques a presión, ASME Sección VIII, ensayos no destructivos, líquidos penetrantes, ultrasonido, JHS Services SAS, Colombia">
+  <meta name="author" content="JHS Services SAS">
+
+  <!-- Open Graph para compartir en redes -->
+  <meta property="og:title" content="Inspección de Tanques a Presión ASME – JHS Services SAS">
+  <meta property="og:description" content="Servicio especializado de inspección de tanques a presión bajo código ASME Sección VIII Div. 1 con ensayos no destructivos.">
+  <meta property="og:type" content="website">
+  <!-- Si luego subes una imagen específica para compartir, cámbiala aquí -->
+  <!-- <meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/imagen-og.png"> -->
 
   <style>
     * {
@@ -18,6 +30,11 @@
       background-color: #050608;
       color: #f5f5f5;
       line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
     header {
@@ -62,6 +79,7 @@
       color: #e5e7eb;
     }
 
+    /* HERO */
     .hero {
       max-width: 1100px;
       margin: 0 auto;
@@ -77,10 +95,18 @@
       line-height: 1.2;
       margin-bottom: 1rem;
     }
+
     .hero-title span {
       color: #f97316;
     }
 
+    .hero p {
+      font-size: 0.96rem;
+      color: #e5e7eb;
+      margin-bottom: 0.7rem;
+    }
+
+    /* Marco de los tanques */
     .tank-frame {
       max-width: 420px;
       width: 100%;
@@ -93,16 +119,21 @@
       justify-content: center;
       align-items: center;
       position: relative;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8);
     }
 
     .tank-image {
       width: 82%;
+      height: auto;
       animation: girar 14s linear infinite;
       transform-origin: center center;
+      filter: drop-shadow(0 0 22px rgba(56, 189, 248, 0.6));
+      transition: filter 0.3s ease;
     }
 
     .tank-image:hover {
       animation-play-state: paused;
+      filter: drop-shadow(0 0 26px rgba(56, 189, 248, 0.9));
     }
 
     @keyframes girar {
@@ -120,7 +151,7 @@
     h2 {
       font-size: 1.4rem;
       margin-bottom: 0.5rem;
-      color: #fff;
+      color: #ffffff;
     }
 
     .card {
@@ -136,8 +167,50 @@
       padding: 1.2rem;
       border-top: 1px solid #111827;
       margin-top: 3rem;
-      color: #aaa;
+      color: #aaaaaa;
       font-size: 0.8rem;
+    }
+
+    /* Botón flotante de WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 50;
+      background-color: #25d366;
+      color: #ffffff;
+      padding: 0.65rem 1rem;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .whatsapp-float:hover {
+      filter: brightness(1.05);
+      transform: translateY(-1px);
+    }
+
+    .whatsapp-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      border: 2px solid #e9fdf1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    /* Responsive */
+    @media (max-width: 880px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -147,6 +220,7 @@
 <header>
   <div class="nav-container">
     <div class="logo-area">
+      <!-- Asegúrate de que este archivo exista en el repositorio -->
       <img src="logo-jhs-services-sas.png" alt="Logo JHS Services SAS">
       <div class="logo-text">
         <span>JHS SERVICES SAS</span>
@@ -165,19 +239,26 @@
 
     <p>
       Se ofrece el servicio de inspección de Tanques a Presión bajo código ASME sección VIII Div 1.
-      Se determinará el estado actual del casco, cabeza superior e inferior para tanques tipo 1 verticales.
-      Para tanques horizontales tipo 2, se evaluarán el casco y cabezas laterales.
     </p>
 
     <p>
-      Se inspeccionarán los cordones de soldadura mediante ensayo de
+      Se determinará el estado actual del casco, cabeza superior y cabeza inferior para el caso de tanques tipo 1 verticales.
+    </p>
+
+    <p>
+      Se determinará el estado actual del casco y cabezas laterales para el caso de tanques tipo 2 horizontales.
+    </p>
+
+    <p>
+      Se inspeccionarán los cordones de soldadura que conforman la estructura del tanque mediante ensayo de
       líquidos penetrantes y ultrasonido defectológico.
     </p>
 
     <p>
-      De acuerdo con la presión de diseño, dimensiones, espesor, material y condición de soldaduras,
-      se determinará si el tanque es apto para continuar operando, si requiere reparación
-      o cuál es la presión de trabajo segura.
+      De acuerdo con la presión de diseño, dimensiones del tanque, tipo de material de construcción, estado de cordones
+      de soldadura y espesor actual de las láminas, se determinará el estado actual del tanque para la condición de
+      operación (presión de diseño), pudiendo concluir si el tanque es apto para continuar bajo operación o si, por el
+      contrario, no califica y debe ser reparado, o cuál es la presión de trabajo segura.
     </p>
 
     <p>
@@ -186,15 +267,30 @@
   </div>
 
   <div class="tank-frame">
-    <img src="tanques-presion-asme-3d.png" class="tank-image" alt="Modelos 3D de tanques a presión ASME">
+    <!-- Asegúrate de que este archivo exista en el repositorio -->
+    <img src="tanques-presion-asme-3d.png"
+         class="tank-image"
+         alt="Modelos 3D de tanques a presión vertical y horizontal bajo código ASME">
   </div>
 </section>
 
 <footer>
-  © <span id="year"></span> JHS Services SAS – Inspección de Tanques ASME.
+  © <span id="year"></span> JHS Services SAS – Inspección de tanques a presión ASME.
 </footer>
 
+<!-- Botón flotante de WhatsApp -->
+<a
+  href="https://wa.me/573001112233?text=Hola%20JHS%20Services%2C%20deseo%20informaci%C3%B3n%20sobre%20la%20inspecci%C3%B3n%20de%20tanques%20a%20presi%C3%B3n%20ASME."
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+>
+  <div class="whatsapp-icon">W</div>
+  <span>WhatsApp</span>
+</a>
+
 <script>
+  // Año automático en el footer
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
