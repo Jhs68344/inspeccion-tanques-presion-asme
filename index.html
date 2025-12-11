@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
 
-  <!-- 💡 AQUÍ PEGAS LA ETIQUETA QUE TE DIO GOOGLE EN SEARCH CONSOLE -->
-  <meta name="google-site-verification" content="<meta name="google-site-verification" content="LezL2zC0pD9Jo0ItPYqUk65AtNmBPVCLArU5841FV_k" />" />
+  <!-- Verificación de Google Search Console -->
+  <meta name="google-site-verification" content="LezL2zC0pD9Jo0ItPYqUk65AtNmBPVCLArU5841FV_k" />
 
   <!-- TÍTULO SEO -->
   <title>Inspección de Tanques a Presión ASME en Colombia – JHS SAS</title>
 
   <!-- SEO BÁSICO -->
-  <meta name="description" content="JHS SAS ofrece servicios de inspección de tanques a presión ASME Sección VIII División 1 en Colombia. Evaluamos casco, cabezas, soldaduras y espesores mediante ensayos no destructivos para determinar la presión de trabajo segura.">
-  <meta name="keywords" content="inspección de tanques a presión, tanques a presión ASME, ASME Sección VIII, ensayos no destructivos, líquidos penetrantes, ultrasonido, JHS SAS, Colombia">
+  <meta name="description" content="JHS SAS ofrece servicios de inspección de tanques a presión ASME Sección VIII División 1 en Colombia. Evaluación de casco, cabezas, soldaduras y espesores mediante ensayos no destructivos.">
+  <meta name="keywords" content="inspección de tanques a presión, tanques ASME, ASME VIII, ensayos no destructivos, líquidos penetrantes, ultrasonido, Colombia, JHS SAS">
   <meta name="author" content="JHS SAS">
 
   <!-- DATOS ESTRUCTURADOS (SCHEMA.ORG) -->
@@ -24,10 +24,7 @@
     "telephone": "+57 3168726521",
     "email": "jhs.com.co@gmail.com",
     "url": "https://jhs68344.github.io/inspeccion-tanques-presion-asme/",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "CO"
-    },
+    "address": { "@type": "PostalAddress", "addressCountry": "CO" },
     "areaServed": "Colombia",
     "serviceType": "Inspección de tanques a presión ASME"
   }
@@ -73,11 +70,11 @@
     .logo-area {
       display: flex;
       align-items: center;
-      gap: 0.9rem;
+      gap: 1rem;
     }
 
     .logo-area img {
-      height: 82px; /* LOGO GRANDE */
+      height: 82px;
       width: auto;
     }
 
@@ -109,7 +106,7 @@
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
       gap: 2rem;
-      background: #0d1117; /* fondo diferente para el texto */
+      background: #0d1117;
       border-radius: 1rem;
     }
 
@@ -130,7 +127,7 @@
       margin-bottom: 0.9rem;
     }
 
-    /* Cajón de contacto dentro del contenido */
+    /* Cajón profesional dentro del contenido */
     .hero-contact-card {
       margin-top: 1.1rem;
       padding: 0.9rem 1.1rem;
@@ -219,7 +216,6 @@
       margin-bottom: 0.25rem;
     }
 
-    /* PIE DE PÁGINA */
     footer {
       text-align: center;
       padding: 1.2rem;
@@ -227,7 +223,7 @@
       font-size: 0.8rem;
     }
 
-    /* WHATSAPP FLOTANTE */
+    /* BOTÓN WHATSAPP FLOTANTE */
     .whatsapp-float {
       position: fixed;
       right: 18px;
@@ -269,7 +265,6 @@
 
 <section class="hero">
   <div>
-    <!-- H1 OPTIMIZADO -->
     <h1 class="hero-title">
       Inspección de Tanques a Presión ASME en Colombia
       <span>Código ASME Sección VIII División 1</span>
@@ -288,55 +283,31 @@
       Se inspeccionarán los cordones de soldadura mediante ensayo de líquidos penetrantes y ultrasonido defectológico.
     </p>
     <p>
-      De acuerdo con presión de diseño, dimensiones, material, soldaduras y espesores, se evaluará si el tanque puede continuar operando, requiere reparación o cuál es la presión de trabajo segura.
+      Se evaluará si el tanque puede continuar operando, requiere reparación o cuál es la presión de trabajo segura.
     </p>
     <p>
       Todo lo anterior apoyado en equipos de última generación y software especializado.
     </p>
+
+    <div class="hero-contact-card">
+      <strong>Contacto directo:</strong><br>
+      📞 316 872 6521<br>
+      ✉️ jhs.com.co@gmail.com
     </div>
   </div>
 
   <div class="tanks-wrapper">
     <div class="tank-frame">
-      <img
-        src="tanque-vertical-asme.png"
-        class="tank-image"
-        alt="Inspección de tanque a presión vertical tipo 1 bajo código ASME en Colombia"
-      >
+      <img src="tanque-vertical-asme.png" class="tank-image" alt="Tanque vertical ASME">
       <div class="tank-label">TANQUE VERTICAL – TIPO 1</div>
     </div>
 
     <div class="tank-frame">
-      <img
-        src="tanque-horizontal-asme.png"
-        class="tank-image"
-        alt="Inspección de tanque a presión horizontal tipo 2 bajo código ASME en Colombia"
-      >
+      <img src="tanque-horizontal-asme.png" class="tank-image" alt="Tanque horizontal ASME">
       <div class="tank-label">TANQUE HORIZONTAL – TIPO 2</div>
     </div>
   </div>
 </section>
 
-<!-- CUADRO PROFESIONAL FINAL -->
-<section class="footer-contact-box" id="contacto-final">
+<section class="footer-contact-box">
   <h3>Contacto Profesional</h3>
-  <p>📞 <strong>316 872 6521</strong></p>
-  <p>✉️ <strong>jhs.com.co@gmail.com</strong></p>
-  <p>JHS SAS – Ensayos no destructivos en Colombia</p>
-</section>
-
-<footer>
-  © <span id="year"></span> JHS Services SAS – Inspección de Tanques a Presión.
-</footer>
-
-<!-- WhatsApp flotante -->
-<a href="https://wa.me/573168726521" target="_blank" class="whatsapp-float">
-  WhatsApp
-</a>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>
